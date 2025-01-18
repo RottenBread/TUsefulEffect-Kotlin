@@ -1,0 +1,9 @@
+name: TChatCleaner2
+version: '1.0-SNAPSHOT'
+main: org.rottenbread.tChatCleaner2.TChatCleaner2
+api-version: '1.21'
+
+commands:
+    cc:
+      description: chat cleaner
+      usage: /cc
