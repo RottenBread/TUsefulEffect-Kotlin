@@ -1,0 +1,8 @@
+name: TUsefulEffect
+version: '1.0-SNAPSHOT'
+main: org.rottenbread.tUsefulEffect.TUsefulEffect
+api-version: '1.21'
+commands:
+  te:
+    description: tusefuleffect
+    usage: /te
