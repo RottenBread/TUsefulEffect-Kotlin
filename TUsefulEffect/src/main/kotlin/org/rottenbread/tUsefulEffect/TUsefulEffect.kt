@@ -12,6 +12,7 @@ import org.bukkit.potion.PotionEffectType
 class TUsefulEffect : JavaPlugin(), Listener, CommandExecutor {
 
     override fun onEnable() {
+        this.getCommand("te")?.tabCompleter = TabCompleter()
         server.pluginManager.registerEvents(this, this)
     }
 
@@ -40,6 +41,11 @@ class TUsefulEffect : JavaPlugin(), Listener, CommandExecutor {
                                 }
                             }
                         }
+                    } else {
+                        sender.sendMessage("§a[서버] §fTUsefulEffect 도움말")
+                        sender.sendMessage("§7 - /te invisibility (inv) : 투명화 on/off")
+                        sender.sendMessage("§7 - /te night_vision (vis) : 야간투시 on/off")
+
                     }
                 }
             }
